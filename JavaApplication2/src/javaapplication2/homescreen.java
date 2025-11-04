@@ -120,7 +120,9 @@ public class homescreen extends javax.swing.JFrame {
     }//GEN-LAST:event_newmatchActionPerformed
 
     private void registerplayerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerplayerActionPerformed
-        // TODO add your handling code here:
+        registerPlayer rp = new registerPlayer();
+        rp.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_registerplayerActionPerformed
 
     private void statisticsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statisticsActionPerformed
@@ -164,6 +166,11 @@ public class homescreen extends javax.swing.JFrame {
                 new homescreen().setVisible(true);
             }
         });
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new playerregistration().setVisible(true);
+            }
+        });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -178,4 +185,8 @@ public class homescreen extends javax.swing.JFrame {
     private newmatch newmatch() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
-}
+
+        private void setVisible() {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+    }
