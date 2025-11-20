@@ -88,7 +88,7 @@ public class newmatch2 extends javax.swing.JFrame {
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"1. ", "", null, null, null},
-                {"2. ", null, null, null, null},
+                {"2. ", "", null, null, null},
                 {"extras", null, null, null, null},
                 {"total", null, null, null, null},
                 {null, null, null, null, null}
@@ -104,6 +104,8 @@ public class newmatch2 extends javax.swing.JFrame {
             jTable2.getColumnModel().getColumn(4).setMinWidth(0);
             jTable2.getColumnModel().getColumn(4).setPreferredWidth(0);
         }
+        jTable2.getAccessibleContext().setAccessibleName("");
+        jTable2.getAccessibleContext().setAccessibleDescription("");
 
         jTable3.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
