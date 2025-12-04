@@ -504,9 +504,12 @@ public class newmatch3 extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new newmatch3().setVisible(true));
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new newmatch3().setVisible(true);
+            }
+        });
     }
-        
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField B11;
     private javax.swing.JTextField B12;

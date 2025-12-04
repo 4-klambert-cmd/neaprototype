@@ -114,19 +114,21 @@ public class homescreen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void newmatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newmatchActionPerformed
-        newmatch nm = new newmatch();
+        newmatch3 nm = new newmatch3();
         nm.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_newmatchActionPerformed
 
     private void registerplayerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerplayerActionPerformed
-        registerPlayer rp = new registerPlayer();
+        playerregistration rp = new playerregistration();
         rp.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_registerplayerActionPerformed
 
     private void statisticsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_statisticsActionPerformed
-        // TODO add your handling code here:
+        Statistics s = new Statistics();
+        s.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_statisticsActionPerformed
 
     private void previousmatchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_previousmatchActionPerformed
@@ -171,6 +173,12 @@ public class homescreen extends javax.swing.JFrame {
                 new playerregistration().setVisible(true);
             }
         });
+    
+            java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new newmatch3().setVisible(true);
+            }
+        });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -182,11 +190,4 @@ public class homescreen extends javax.swing.JFrame {
     private javax.swing.JButton statistics;
     // End of variables declaration//GEN-END:variables
 
-    private newmatch newmatch() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-        private void setVisible() {
-            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-        }
-    }
+}
